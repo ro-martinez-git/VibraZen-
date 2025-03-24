@@ -1,0 +1,57 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* font-family: "Libre Baskerville", serif; */
+
+/* 
+Colors:
+#000000; Negro
+#6CE69A; Verde claro
+*/
+
+
+html{
+    font-family: "Libre Baskerville", serif;
+    font-size: 62.5%; /*1rem=10px*/
+}
+
+/* natbar style */
+header{
+    background-color: #000000;
+}
+
+header img{
+    width: 80px;
+    border-radius: 42px;
+}
+
+header ul{
+   list-style: none; 
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* main de index */
+.banner-img-portada{
+    background-image: url(../medios/banner-img.jpg);
+    height: 300px;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* cards con información index */
+.container-option-info{
+background-color: #6CE69A;
+}
+
+/* footer */
+.footer-container {
+    background-color: #000000;
+}
+
+.footer-container p {
+    color: #ffffff;
+}
