@@ -1,55 +1,230 @@
-/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-/* font-family: "Libre Baskerville", serif; */
+/* Fuente: font-family: 'Roboto', sans-serif; */
 
 /* 
-Colors:
-#000000; Negro
-#6CE69A; Verde claro
+Colores:
+Falta agregar colores
 */
 
-
-html{
-    font-family: "Libre Baskerville", serif;
-    font-size: 62.5%; /*1rem=10px*/
+/*Estilo general----------------------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-/* natbar style */
-header{
-    background-color: #000000;
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    /*simula que 1rem=10px*/
 }
 
-header img{
-    width: 80px;
-    border-radius: 42px;
+.h1 .h2 .h3 {
+    font-family: Georgia, serif;
 }
 
-header ul{
-   list-style: none; 
+/* NATBAR -----------------------------------------------------------------*/
+header {
+    background: #F77A36;
 }
-nav a{
+
+header img {
+    width: 100px;
+    margin-top: 3px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-/* main de index */
-.banner-img-portada{
+
+.login-register {
+    display: flex;
+    gap: 1rem;
+}
+
+.login-register a {
+    background: white;
+    color: #F77A36;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+/* MAIN INDEX -------------------------------------------------------------*/
+.banner-img-portada {
     background-image: url(../medios/banner-img.jpg);
     height: 300px;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     text-align: center;
 }
 
-/* cards con información index */
-.container-option-info{
-background-color: #6CE69A;
+.banner-img-portada .text-banner{
+  text-align: center;
 }
 
-/* footer */
+/* primer section*/
+.contenido-presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.img-presentacion img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.txt-presentation {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.txt-presentation ul {
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+
+.txt-presentation button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    background-color: #FFA07A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* segunda section*/
+
+.section-card{
+    align-items: center;
+}
+.contenedor-card-info-y-dudas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.contenedor-card-option {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container-option-info {
+    padding: 4rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #6CE69A;
+}
+
+.contenedor-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+/* formulario*/
+.contenedor-formulario input,
+.contenedor-formulario textarea {
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+}
+
+.contenedor-formulario input[type="submit"] {
+    background-color: #6CE69A;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* NUTRICIÓN */
+.section-nutricion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.nutricion-div {
+    background-color: #f0f0f0;
+    ;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.nutricion-div h1,
+.nutricion-div h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.nutricion-div p,
+.nutricion-div ul {
+    margin: 0.5rem 0 0 0;
+}
+
+.nutricion-div ul {
+    padding-left: 1.2rem;
+}
+
+.button {
+    font-size: 16px;
+    margin: 10px 5px 10px 5px;
+    background: darkcyan;
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+}
+
+
+/* FOOTER */
 .footer-container {
     background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #000;
+    font-size: 1.4rem;
 }
 
 .footer-container p {

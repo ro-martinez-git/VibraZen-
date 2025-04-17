@@ -6,36 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <!-- css style -->
+     <!-- En tu archivo HTML en el <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
         <!-- barra de navegación -->
-        <nav>
-            <a href="#"><img src="./medios/logo-img.png" alt="Logo de Vibra Zen"></a>
+        <nav class="nav-container">
+            <a href="#"><img src="./medios/logo-img-3.png" alt="Logo de Vibra Zen"></a>
             <ul>
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="./index.html">INICIO</a></li>
                 <li><a href="./pages/ejercicio.html">EJERCICIO</a></li>
                 <li><a href="./pages/nutricion.html">NUTRICIÓN</a></li>
                 <li><a href="./pages/bienestar.html">BIENESTAR</a></li>
                 <li><a href="./pages/contacto.html">CONTACTO</a></li>
             </ul>
-            <a href="#"><img src="./medios/img-avatar.jpg" alt="Img de avatar perfil"></a>
+            <div class="login-register">
+                <a href="#">Iniciar sesión</a>
+                <a href="#">Registrarse</a>
+              </div>
         </nav>
     </header>
 
     <main>
         <!-- sección Banner -->
         <section class="banner-img-portada">
-            <h1>VibraZen</h1>
-            <p>Lo que estabas buscando</p>
+            <div class="text-banner">
+            <h1>Bienestar y Nutrición para una Vida Plena</h1>
+            <p>Explorá hábitos saludables, recetas nutritivas y ejercicios para sentirte mejor cada día. Vibra alto con VibraZen.</p>
+            </div>
         </section>
 
         <!-- Presentación incial img y texto -->
         <section class="contenido-presentacion">
             <div class="img-presentacion">
-                <img src="/medios/img-mujer-estirando.jpg" alt="Mujer estirando">
+                <img src="/medios/img-section-principal.jpg" alt="Hombre ejercitando">
             </div>
             <div class="txt-presentation">
                 <p>
@@ -58,7 +65,7 @@
         <!-- Card con opciones de información y form de dudas-->
         <div class="contenedor-card-info-y-dudas">
             <!-- card de opciones -->
-            <section>
+            <section class="section-card">
                 <div class="contenedor-card-option">
                     <article class="container-option-info">
                         <h3>Rutinas de entrenamiento</h3>
