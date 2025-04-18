@@ -23,9 +23,12 @@ html {
     font-family: Georgia, serif;
 }
 
-/* NATBAR -----------------------------------------------------------------*/
+/* NATBAR -----------------------------------------------------------------*/ 
 header {
-    background: #F77A36;
+    background-image: url(../medios/mujer-camina.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header img {
@@ -50,7 +53,7 @@ header ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 
@@ -69,21 +72,28 @@ nav a {
     border-radius: 5px;
 }
 
-
-/* MAIN INDEX -------------------------------------------------------------*/
 .banner-img-portada {
-    background-image: url(../medios/banner-img.jpg);
     height: 300px;
     background-size: cover;
     background-position: center;
     text-align: center;
+    margin-top: 23rem;
+}
+
+.text-banner-h1{
+    font-size: 3rem;
+}
+
+.text-banner-p{
+    font-size: 2rem;
 }
 
 .banner-img-portada .text-banner{
   text-align: center;
 }
 
-/* primer section*/
+/* MAIN INDEX ------------------------------------------------------------- */
+/* primer section */
 .contenido-presentacion {
     display: grid;
     grid-template-columns: 1fr 1fr;
