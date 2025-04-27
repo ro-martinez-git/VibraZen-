@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 /* Fuente: font-family: 'Roboto', sans-serif; */
 
-/* 
-Colores:
-Falta agregar colores
+/* Colores:
+    Principal: #F77A36 (naranja)
+    Secundario: #6CE69A (verde)
+    Fondo claro: #f8f9fa
+    Fondo oscuro: #000000
 */
 
-/*Estilo general----------------------------------------------------------*/
+/* -------------------------- ESTILO GENERAL ----------------------------- */
 * {
     margin: 0px;
     padding: 0px;
@@ -23,12 +25,23 @@ html {
     font-family: Georgia, serif;
 }
 
-/* NATBAR -----------------------------------------------------------------*/
-header {
+/* ------------------------- HEADER y NAVBAR -------------------------- */
+.banner-img-portada{
     background-image: url(../medios/mujer-camina.gif);
+    height: 67em;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    text-align: center; 
+}
+
+.text-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    height: 100%; 
 }
 
 header img {
@@ -76,27 +89,19 @@ nav a {
     border-radius: 5px;
 }
 
-.banner-img-portada {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    margin-top: 23rem;
-}
-
 .text-banner-h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .text-banner-p {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .banner-img-portada .text-banner {
     text-align: center;
 }
 
-/* MAIN INDEX ------------------------------------------------------------- */
+/* ------------------------------ MAIN INDEX ---------------------------- */
 /* primer section ---------------------------------------------------------*/
 .contenido-presentacion {
     display: grid;
@@ -112,7 +117,7 @@ nav a {
 }
 
 .txt-presentation {
-    font-size: 1.6rem;
+    font-size:2rem;
     line-height: 1.5;
 }
 
@@ -123,12 +128,13 @@ nav a {
 
 .txt-presentation button {
     margin-top: 1.5rem;
-    padding: 0.8rem 2rem;
-    font-size: 1.5rem;
-    background-color: #FFA07A;
+    background-color: #F77A36;
     color: white;
     border: none;
+    padding: 1rem 2.5rem;
     border-radius: 8px;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 
@@ -143,6 +149,7 @@ nav a {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     padding: 4rem;
+    margin-bottom: 5rem;
 }
 
 .contenedor-card-option {
@@ -152,7 +159,7 @@ nav a {
 }
 
 .container-option-info {
-    padding: 4rem;
+    padding: 6rem;
     border-radius: 10px;
     text-align: center;
     font-size: 1.8rem;
@@ -184,7 +191,7 @@ nav a {
 }
 
 
-/* NUTRICIÓN -------------------------------------------------------------------------------*/
+/* ----------------------------- NUTRICIÓN ------------------------------------------------ */
 .section-nutricion {
     display: flex;
     flex-direction: column;
@@ -230,7 +237,7 @@ nav a {
     border-radius: 8px;
 }
 
-/* SECTION EJERCICIO --------------------------------------------------------------------------------*/
+/* ---------------------------------EJERCICIO ------------------------------------------------*/
 .grid-calendario,
 .grid-ejercicio {
     display: grid;
@@ -250,17 +257,21 @@ nav a {
 }
 
 
-/* FOOTER --------------------------------------------------------------------------------------------*/
+/*------------------------------------ FOOTER ----------------------------------------------*/
 .footer-container {
     background-color: #000000;
     display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    background-color: #000;
-    font-size: 1.4rem;
+    padding: 2.4rem;
 }
 
 .footer-container p {
     color: #ffffff;
+    font-size: 1.7rem;
+    padding: 0rem 5rem 0rem 5rem;
 }
+
