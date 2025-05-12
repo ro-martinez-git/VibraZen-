@@ -1,0 +1,41 @@
+.bienestar-main {
+    padding: 2rem;
+    text-align: center;
+
+    .bienestar-section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .bienestar-title {
+        font-size: 2.5rem;
+        color: #6495ed;
+        margin-bottom: 1rem;
+    }
+
+    .bienestar-description {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+
+    .bienestar-subtitle {
+        font-size: 2rem;
+        color: #6495ed;
+        margin-bottom: 1rem;
+    }
+
+    .bienestar-list {
+        list-style: none;
+        padding: 0;
+
+        .bienestar-list-item {
+            background-color: #6495ed;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.8rem;
+        }
+    }
+}

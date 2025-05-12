@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+header {
+    .banner-img-portada {
+        background-image: url(../medios/mujer-camina.gif);
+        height: 67em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+
+        .text-banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+
+            .text-banner-h1 {
+                font-size: 4rem;
+            }
+
+            .text-banner-p {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+main {
+    .contenido-presentacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 1rem;
+        gap: 3rem;
+
+        .img-presentacion {
+            img {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+
+        .txt-presentation {
+            font-size: 2.5rem;
+            line-height: 1.5;
+
+            ul {
+                margin-top: 1rem;
+                padding-left: 2rem;
+            }
+
+            button {
+                margin-top: 1.5rem;
+                background-color: #F77A36;
+                color: white;
+                border: none;
+                padding: 1rem 2.5rem;
+                border-radius: 8px;
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .contenedor-card-info-y-dudas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        padding: 4rem;
+        margin-bottom: 5rem;
+
+        .section-card {
+            .contenedor-card-option {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .container-option-info {
+                    padding: 6rem;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 1.8rem;
+                    color: white;
+                    background-color: #6495ed;
+                }
+            }
+        }
+
+        .contenedor-img-mujer {
+            h2.titulo-comenzar {
+                font-size: 3rem;
+                margin: 1rem;
+            }
+
+            a {
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}

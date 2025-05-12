@@ -1,0 +1,45 @@
+.section-nutricion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    .nutricion-div {
+        background-color: #f0f0f0;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+
+        h1,
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        p,
+        ul {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.8rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        .button {
+            font-size: 18px;
+            margin: 22px 5px 10px 5px;
+            padding: 9px;
+            color: white;
+            border-radius: 8px;
+            background: #6495ed;
+            font-weight: bold;
+        }
+    }
+}
