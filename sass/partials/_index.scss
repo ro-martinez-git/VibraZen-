@@ -1,14 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+@keyframes fadeInAndDisappear {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    41% {
+        opacity: 0; // Dispara el cambio abrupto a 0
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
-    /* 1rem = 10px */
-}
 
 header {
     .banner-img-portada {
@@ -26,6 +37,8 @@ header {
             align-items: center;
             text-align: center;
             height: 100%;
+            opacity: 0;
+            animation: fadeIn 4s ease-in-out forwards;
 
             .text-banner-h1 {
                 font-size: 4rem;

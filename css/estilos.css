@@ -1,4 +1,16 @@
 /* comentario css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
 header img {
   width: 100px;
   margin-top: 3px;
@@ -53,18 +65,23 @@ footer .footer-container > div p {
   text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@keyframes fadeInAndDisappear {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  41% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 62.5%;
-  /* 1rem = 10px */
-}
-
 header .banner-img-portada {
   background-image: url(../medios/mujer-camina.gif);
   height: 67em;
@@ -80,6 +97,8 @@ header .banner-img-portada .text-banner {
   align-items: center;
   text-align: center;
   height: 100%;
+  opacity: 0;
+  animation: fadeIn 4s ease-in-out forwards;
 }
 header .banner-img-portada .text-banner .text-banner-h1 {
   font-size: 4rem;
