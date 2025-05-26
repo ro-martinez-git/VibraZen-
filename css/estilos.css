@@ -156,7 +156,7 @@ main .contenedor-card-info-y-dudas .section-card .contenedor-card-option .contai
   color: white;
   background-color: #6495ed;
 }
-main .contenedor-card-info-y-dudas .contenedor-img-mujer h2.titulo-comenzar {
+main .contenedor-card-info-y-dudas .contenedor-img-mujer h3.titulo-comenzar {
   font-size: 3rem;
   margin: 1rem;
 }
@@ -184,7 +184,8 @@ main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
   box-sizing: border-box;
 }
 .section-nutricion .nutricion-div h1,
-.section-nutricion .nutricion-div h2 {
+.section-nutricion .nutricion-div h2,
+.section-nutricion .nutricion-div h3 {
   margin-top: 0;
   color: #333;
 }
@@ -268,10 +269,22 @@ main .grid-calendario .dia {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #2c3e50;
 }
+main .grid-ejercicio .card-ejercicio h1,
+main .grid-ejercicio .card-ejercicio h2,
 main .grid-ejercicio .card-ejercicio h3,
+main .grid-ejercicio .card-ejercicio h4,
+main .grid-ejercicio .dia h1,
+main .grid-ejercicio .dia h2,
 main .grid-ejercicio .dia h3,
+main .grid-ejercicio .dia h4,
+main .grid-calendario .card-ejercicio h1,
+main .grid-calendario .card-ejercicio h2,
 main .grid-calendario .card-ejercicio h3,
-main .grid-calendario .dia h3 {
+main .grid-calendario .card-ejercicio h4,
+main .grid-calendario .dia h1,
+main .grid-calendario .dia h2,
+main .grid-calendario .dia h3,
+main .grid-calendario .dia h4 {
   margin-bottom: 1rem;
   font-size: 2rem;
 }
@@ -381,9 +394,14 @@ footer .footer-container p {
   }
 }
 
-@media (min-width: 320px) and (max-width: 1025px) {
+@media (min-width: 320px) and (max-width: 321px) {
   .section-nutricion {
-    margin-bottom: 12rem;
+    margin-bottom: 20rem;
+  }
+}
+@media (min-width: 322px) and (max-width: 1025px) {
+  .section-nutricion {
+    margin-bottom: 15rem;
   }
 }
 

@@ -109,7 +109,11 @@ footer {
 
 
 .section-nutricion {
-    @media (min-width: 320px) and (max-width: 1025px) {
-        margin-bottom: 12rem;
+    @media (min-width: 320px) and (max-width: 321px){
+        margin-bottom: 20rem;
+    }
+
+    @media (min-width: 322px) and (max-width: 1025px) {
+        margin-bottom: 15rem;
     }
 }
