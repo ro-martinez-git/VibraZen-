@@ -1,107 +1,90 @@
 // Estilos para el header
+
 header {
-    img {
-        width: 100px;
-        margin-top: 3px;
-
-        @media (max-width: 480px) {
-            width: 80px;
-        }
-    }
-
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 2rem;
-        flex-wrap: wrap;
-        background-color: #F77A36;
-
-        @media (max-width: 991px) {
+    @media (max-width: 991px) {
+        .nav-container {
             flex-direction: column;
             align-items: flex-start;
-        }
+            padding-bottom: 1rem;
 
-        @media (max-width: 480px) {
-            padding: 1rem;
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.7rem;
-
-            @media (max-width: 480px) {
-                font-size: 1.5rem;
-            }
-        }
-
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-
-            @media (max-width: 991px) {
+            ul {
                 flex-direction: column;
                 gap: 1rem;
                 margin-top: 1rem;
             }
-        }
 
-        .login-register {
-            display: flex;
-            gap: 1rem;
-
-            @media (max-width: 991px) {
+            .login-register {
                 margin-top: 1rem;
             }
+        }
 
-            a {
-                background: white;
-                color: #F77A36;
-                font-size: 2rem;
-                text-decoration: none;
-                padding: 0.5rem 1rem;
-                border: 1px solid white;
-                border-radius: 5px;
+        .banner-img-portada {
+            .text-banner {
+                .text-banner-h1 {
+                    font-size: 3rem;
+                    padding: 0 1rem;
+                }
 
-                @media (max-width: 480px) {
-                    font-size: 1.7rem;
-                    padding: 0.3rem 0.8rem;
+                .text-banner-p {
+                    font-size: 2.2rem;
+                    padding: 0 1rem;
+                }
+            }
+
+        }
+
+    }
+}
+
+main {
+    @media (max-width: 768px) {
+        .contenido-presentacion {
+            grid-template-columns: 1fr;
+
+            .txt-presentation {
+                font-size: 1.7rem;
+                line-height: 1.5;
+                padding: 2rem;
+            }
+        }
+
+        .contenedor-card-info-y-dudas {
+            grid-template-columns: 1fr;
+
+            .contenedor-img-mujer a img {
+                margin-bottom: 3rem;
+            }
+
+            .section-card {
+                .contenedor-card-option {
+                    .container-option-info {
+                        padding: 2.5rem;
+                        height: 11rem;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        display: flex;
+
+                        h2 {
+                            font-size: 1.6rem;
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-
 // Estilos para el footer
 footer {
-    .footer-container {
-        background-color: #000000;
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2.4rem;
-        width: 100%;
-        flex-wrap: wrap;
-
-        @media (max-width: 991px) {
+    @media (max-width: 768px) {
+        .footer-container {
             flex-direction: column;
             gap: 1rem;
-        }
+            padding: 1rem;
 
-        p {
-            color: #ffffff;
-            font-size: 1.7rem;
-            padding: 0 5rem;
-            text-align: center;
-
-            @media (max-width: 480px) {
-                padding: 0 2rem;
-                font-size: 1.5rem;
+            div p {
+                font-size: 1.3rem;
             }
         }
     }
@@ -109,11 +92,15 @@ footer {
 
 
 .section-nutricion {
-    @media (min-width: 320px) and (max-width: 321px){
-        margin-bottom: 20rem;
+    @media (min-width: 320px) and (max-width: 1025px) {
+        margin-bottom: 10rem;
     }
+}
 
-    @media (min-width: 322px) and (max-width: 1025px) {
-        margin-bottom: 15rem;
+@media (max-width: 769px) {
+    .bienestar-main {
+        .bienestar-section {
+            margin-bottom: 10rem;
+        }
     }
 }

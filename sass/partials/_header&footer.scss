@@ -22,10 +22,10 @@ header {
         align-items: center;
         padding: 0 2rem;
         flex-wrap: wrap;
-        background-color: #F77A36;
+        background-color: $naranja;
 
         a {
-            color: white;
+            color: $white;
             text-decoration: none;
             font-size: 1.7rem;
         }
@@ -41,12 +41,12 @@ header {
             gap: 1rem;
 
             a {
-                background: white;
-                color: #F77A36;
+                background: $white;
+                color: $naranja;
                 font-size: 2rem;
                 text-decoration: none;
                 padding: 0.5rem 1rem;
-                border: 1px solid white;
+                border: 1px solid $white;
                 border-radius: 5px;
             }
         }
@@ -55,7 +55,7 @@ header {
 
 footer {
     .footer-container {
-        background-color: #000000;
+        background-color: $black;
         display: flex;
         position: fixed;
         bottom: 0;
@@ -67,8 +67,8 @@ footer {
 
         >div {
             p {
-                color: #ffffff;
-                font-size: 1.7rem;
+                color: $white;
+                font-size: 1.6rem;
                 padding: 0 5rem;
                 text-align: center;
             }

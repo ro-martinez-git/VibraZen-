@@ -24,7 +24,7 @@ header .nav-container {
   background-color: #F77A36;
 }
 header .nav-container a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.7rem;
 }
@@ -38,12 +38,12 @@ header .nav-container .login-register {
   gap: 1rem;
 }
 header .nav-container .login-register a {
-  background: white;
+  background: #ffffff;
   color: #F77A36;
   font-size: 2rem;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   border-radius: 5px;
 }
 
@@ -60,7 +60,7 @@ footer .footer-container {
 }
 footer .footer-container > div p {
   color: #ffffff;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   padding: 0 5rem;
   text-align: center;
 }
@@ -129,7 +129,7 @@ main .contenido-presentacion .txt-presentation ul {
 main .contenido-presentacion .txt-presentation button {
   margin-top: 1.5rem;
   background-color: #F77A36;
-  color: white;
+  color: #ffffff;
   border: none;
   padding: 1rem 2.5rem;
   border-radius: 8px;
@@ -153,7 +153,7 @@ main .contenedor-card-info-y-dudas .section-card .contenedor-card-option .contai
   border-radius: 10px;
   text-align: center;
   font-size: 1.8rem;
-  color: white;
+  color: #ffffff;
   background-color: #6495ed;
 }
 main .contenedor-card-info-y-dudas .contenedor-img-mujer h3.titulo-comenzar {
@@ -176,11 +176,11 @@ main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
   font-size: 16px;
 }
 .section-nutricion .nutricion-div {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding: 1rem 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 .section-nutricion .nutricion-div h1,
@@ -201,7 +201,7 @@ main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
   font-size: 18px;
   margin: 22px 5px 10px 5px;
   padding: 9px;
-  color: white;
+  color: #ffffff;
   border-radius: 8px;
   background: #6495ed;
   font-weight: bold;
@@ -216,7 +216,7 @@ main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
   margin: 0 auto;
 }
 .bienestar-main .bienestar-title {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #6495ed;
   margin-bottom: 1rem;
 }
@@ -241,6 +241,7 @@ main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 1.8rem;
+  height: 6rem;
 }
 
 main .grid-ejercicio,
@@ -289,119 +290,78 @@ main .grid-calendario .dia h4 {
   font-size: 2rem;
 }
 
-header img {
-  width: 100px;
-  margin-top: 3px;
-}
-@media (max-width: 480px) {
-  header img {
-    width: 80px;
-  }
-}
-header .nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  flex-wrap: wrap;
-  background-color: #F77A36;
-}
 @media (max-width: 991px) {
   header .nav-container {
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 1rem;
   }
-}
-@media (max-width: 480px) {
-  header .nav-container {
-    padding: 1rem;
-  }
-}
-header .nav-container a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.7rem;
-}
-@media (max-width: 480px) {
-  header .nav-container a {
-    font-size: 1.5rem;
-  }
-}
-header .nav-container ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-@media (max-width: 991px) {
   header .nav-container ul {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
   }
-}
-header .nav-container .login-register {
-  display: flex;
-  gap: 1rem;
-}
-@media (max-width: 991px) {
   header .nav-container .login-register {
     margin-top: 1rem;
   }
-}
-header .nav-container .login-register a {
-  background: white;
-  color: #F77A36;
-  font-size: 2rem;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border: 1px solid white;
-  border-radius: 5px;
-}
-@media (max-width: 480px) {
-  header .nav-container .login-register a {
-    font-size: 1.7rem;
-    padding: 0.3rem 0.8rem;
+  header .banner-img-portada .text-banner .text-banner-h1 {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+  header .banner-img-portada .text-banner .text-banner-p {
+    font-size: 2.2rem;
+    padding: 0 1rem;
   }
 }
 
-footer .footer-container {
-  background-color: #000000;
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2.4rem;
-  width: 100%;
-  flex-wrap: wrap;
+@media (max-width: 768px) {
+  main .contenido-presentacion {
+    grid-template-columns: 1fr;
+  }
+  main .contenido-presentacion .txt-presentation {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  main .contenedor-card-info-y-dudas {
+    grid-template-columns: 1fr;
+  }
+  main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
+    margin-bottom: 3rem;
+  }
+  main .contenedor-card-info-y-dudas .section-card .contenedor-card-option .container-option-info {
+    padding: 2.5rem;
+    height: 11rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  main .contenedor-card-info-y-dudas .section-card .contenedor-card-option .container-option-info h2 {
+    font-size: 1.6rem;
+  }
 }
-@media (max-width: 991px) {
+
+@media (max-width: 768px) {
   footer .footer-container {
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
   }
-}
-footer .footer-container p {
-  color: #ffffff;
-  font-size: 1.7rem;
-  padding: 0 5rem;
-  text-align: center;
-}
-@media (max-width: 480px) {
-  footer .footer-container p {
-    padding: 0 2rem;
-    font-size: 1.5rem;
+  footer .footer-container div p {
+    font-size: 1.3rem;
   }
 }
 
-@media (min-width: 320px) and (max-width: 321px) {
+@media (min-width: 320px) and (max-width: 1025px) {
   .section-nutricion {
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
   }
 }
-@media (min-width: 322px) and (max-width: 1025px) {
-  .section-nutricion {
-    margin-bottom: 15rem;
+
+@media (max-width: 769px) {
+  .bienestar-main .bienestar-section {
+    margin-bottom: 10rem;
   }
 }
 

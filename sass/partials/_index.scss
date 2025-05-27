@@ -20,7 +20,6 @@
     }
 }
 
-
 header {
     .banner-img-portada {
         background-image: url(../medios/mujer-camina.gif);
@@ -77,8 +76,8 @@ main {
 
             button {
                 margin-top: 1.5rem;
-                background-color: #F77A36;
-                color: white;
+                background-color: $naranja;
+                color: $white;
                 border: none;
                 padding: 1rem 2.5rem;
                 border-radius: 8px;
@@ -106,8 +105,8 @@ main {
                     border-radius: 10px;
                     text-align: center;
                     font-size: 1.8rem;
-                    color: white;
-                    background-color: #6495ed;
+                    color: $white;
+                    background-color: $azul;
                 }
             }
         }
