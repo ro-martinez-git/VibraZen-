@@ -364,5 +364,26 @@ main .grid-calendario .dia h4 {
     margin-bottom: 10rem;
   }
 }
+@media (min-width: 425px) and (max-width: 769px) {
+  .ejercicio-main .grid-ejercicio,
+  .ejercicio-main .grid-calendario {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 576px) {
+  .ejercicio-main .card-ejercicio,
+  .ejercicio-main .dia {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 424px) {
+  .ejercicio-main .grid-ejercicio,
+  .ejercicio-main .grid-calendario {
+    grid-template-columns: 1fr;
+    margin-bottom: 7rem;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
