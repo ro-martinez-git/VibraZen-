@@ -3,7 +3,6 @@
     text-align: center;
 
     .bienestar-section {
-        max-width: 800px;
         margin: 0 auto;
     }
 
@@ -14,29 +13,77 @@
     }
 
     .bienestar-description {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1.5;
         margin-bottom: 2rem;
     }
 
     .bienestar-subtitle {
-        font-size: 2rem;
+        font-size: 3rem;
         color: $azul;
         margin-bottom: 1rem;
     }
 
-    .bienestar-list {
-        list-style: none;
-        padding: 0;
-
-        .bienestar-list-item {
-            background-color: $azul;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            font-size: 1.8rem;
-            height: 6rem;
-        }
+    .card {
+        position: relative;
+        max-width: 100%;
+        width: 80%;
+        min-height: 16rem;
+        padding: 2rem;
+        background: $azul;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 15px;
+        cursor: pointer;
+        margin: 3rem auto;
+        text-align: center;
+        box-sizing: border-box;
     }
+
+    .card::before,
+    .card::after {
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        background-color: lightblue;
+        transition: all 0.7s;
+    }
+
+    .card::before {
+        top: 0;
+        right: 0;
+        border-radius: 0 15px 0 100%;
+    }
+
+    .card::after {
+        bottom: 0;
+        left: 0;
+        border-radius: 0 100% 0 15px;
+    }
+
+    /* Hover: efecto y texto animado */
+    .card:hover::before,
+    .card:hover::after {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .card:hover::after {
+        content: "VER MÁS";
+        color: #2d2d2d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }

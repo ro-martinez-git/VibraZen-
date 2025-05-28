@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* comentario css */
 * {
   margin: 0;
@@ -21,7 +22,7 @@ header .nav-container {
   align-items: center;
   padding: 0 2rem;
   flex-wrap: wrap;
-  background-color: #F77A36;
+  background-color: #000000;
 }
 header .nav-container a {
   color: #ffffff;
@@ -44,7 +45,14 @@ header .nav-container .login-register a {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border: 1px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+header .nav-container .login-register a:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #F77A36;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer .footer-container {
@@ -65,23 +73,30 @@ footer .footer-container > div p {
   text-align: center;
 }
 
-@keyframes fadeInAndDisappear {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.95);
-  }
-  40% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  41% {
-    opacity: 0;
-    transform: translateY(0) scale(1);
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/*
+  .login-register {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                background: $white;
+                color: $naranja;
+                font-size: 2rem;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                border: 1px solid $white;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: darken($white, 10%);
+                    color: $white;
+                    background-color: $black;
+                    border-color: $naranja;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }*/
 header .banner-img-portada {
   background-image: url(../medios/mujer-camina.gif);
   height: 67em;
@@ -97,8 +112,6 @@ header .banner-img-portada .text-banner {
   align-items: center;
   text-align: center;
   height: 100%;
-  opacity: 0;
-  animation: fadeIn 4s ease-in-out forwards;
 }
 header .banner-img-portada .text-banner .text-banner-h1 {
   font-size: 4rem;
@@ -121,20 +134,67 @@ main .contenido-presentacion .img-presentacion img {
 main .contenido-presentacion .txt-presentation {
   font-size: 2.5rem;
   line-height: 1.5;
+  /* From Uiverse.io by KlaujonRuamni */
+  /* Hover animation */
+  /* Click animation */
+  /* Shimmer animation */
+  /* Particle animation */
 }
 main .contenido-presentacion .txt-presentation ul {
   margin-top: 1rem;
   padding-left: 2rem;
 }
-main .contenido-presentacion .txt-presentation button {
-  margin-top: 1.5rem;
-  background-color: #F77A36;
-  color: #ffffff;
-  border: none;
-  padding: 1rem 2.5rem;
-  border-radius: 8px;
-  font-size: 1.6rem;
+main .contenido-presentacion .txt-presentation .beautiful-button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
+  /* Gradient background */
+  color: white;
+  /* White text color */
+  font-family: "Segoe UI", sans-serif;
+  /* Stylish and legible font */
   font-weight: bold;
+  font-size: 18px;
+  /* Large font size */
+  border: none;
+  /* No border */
+  border-radius: 30px;
+  /* Rounded corners */
+  padding: 14px 28px;
+  /* Large padding */
+  cursor: pointer;
+  /* Cursor on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  animation: button-shimmer 2s infinite;
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition */
+  margin-top: 2rem;
+}
+main .contenido-presentacion .txt-presentation .beautiful-button:hover {
+  background: linear-gradient(to bottom, #4e55d7, #6495ed);
+  animation: button-particles 1s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+main .contenido-presentacion .txt-presentation .beautiful-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
 }
 main .contenedor-card-info-y-dudas {
   display: grid;
@@ -154,7 +214,7 @@ main .contenedor-card-info-y-dudas .section-card .contenedor-card-option .contai
   text-align: center;
   font-size: 1.8rem;
   color: #ffffff;
-  background-color: #6495ed;
+  background: linear-gradient(90deg, rgb(0, 35, 99) 0%, rgb(85, 199, 217) 50%, rgb(100, 149, 237) 100%);
 }
 main .contenedor-card-info-y-dudas .contenedor-img-mujer h3.titulo-comenzar {
   font-size: 3rem;
@@ -182,6 +242,11 @@ main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid #ffffff;
   box-sizing: border-box;
+  /* From Uiverse.io by KlaujonRuamni */
+  /* Hover animation */
+  /* Click animation */
+  /* Shimmer animation */
+  /* Particle animation */
 }
 .section-nutricion .nutricion-div h1,
 .section-nutricion .nutricion-div h2,
@@ -197,22 +262,65 @@ main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
 .section-nutricion .nutricion-div ul {
   padding-left: 1.2rem;
 }
-.section-nutricion .nutricion-div .button {
-  font-size: 18px;
-  margin: 22px 5px 10px 5px;
-  padding: 9px;
-  color: #ffffff;
-  border-radius: 8px;
-  background: #6495ed;
+.section-nutricion .nutricion-div .beautiful-button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #4e55d7, #6495ed);
+  /* Gradient background */
+  color: white;
+  /* White text color */
+  font-family: "Segoe UI", sans-serif;
+  /* Stylish and legible font */
   font-weight: bold;
+  font-size: 18px;
+  /* Large font size */
+  border: none;
+  /* No border */
+  border-radius: 30px;
+  /* Rounded corners */
+  padding: 14px 28px;
+  /* Large padding */
+  cursor: pointer;
+  /* Cursor on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  animation: button-shimmer 2s infinite;
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition */
+  margin-top: 3rem;
+}
+.section-nutricion .nutricion-div .beautiful-button:hover {
+  background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+  animation: button-particles 1s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+.section-nutricion .nutricion-div .beautiful-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
 }
 
 .bienestar-main {
   padding: 2rem;
   text-align: center;
+  /* Hover: efecto y texto animado */
 }
 .bienestar-main .bienestar-section {
-  max-width: 800px;
   margin: 0 auto;
 }
 .bienestar-main .bienestar-title {
@@ -221,27 +329,69 @@ main .contenedor-card-info-y-dudas .contenedor-img-mujer a img {
   margin-bottom: 1rem;
 }
 .bienestar-main .bienestar-description {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
 .bienestar-main .bienestar-subtitle {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #6495ed;
   margin-bottom: 1rem;
 }
-.bienestar-main .bienestar-list {
-  list-style: none;
-  padding: 0;
+.bienestar-main .card {
+  position: relative;
+  max-width: 100%;
+  width: 80%;
+  min-height: 16rem;
+  padding: 2rem;
+  background: #6495ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 3rem auto;
+  text-align: center;
+  box-sizing: border-box;
 }
-.bienestar-main .bienestar-list .bienestar-list-item {
-  background-color: #6495ed;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 1.8rem;
-  height: 6rem;
+.bienestar-main .card::before,
+.bienestar-main .card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.7s;
+}
+.bienestar-main .card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+.bienestar-main .card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+.bienestar-main .card:hover::before,
+.bienestar-main .card:hover::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.bienestar-main .card:hover::after {
+  content: "VER MÁS";
+  color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main .grid-ejercicio,
@@ -267,7 +417,9 @@ main .grid-calendario .dia {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 18px 13px 16px 1px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: 18px 13px 16px 1px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: 18px 13px 16px 1px rgba(0, 0, 0, 0.77);
   color: #2c3e50;
 }
 main .grid-ejercicio .card-ejercicio h1,
