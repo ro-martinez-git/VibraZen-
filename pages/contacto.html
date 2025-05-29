@@ -32,43 +32,38 @@
             </div>
         </nav>
     </header>
-
-    <!-- Main contenido principal -->
     <main>
-        <!-- FORMULARIO CON BOOTSTRAP -->
-        <section class="container my-5">
-            <h2 class="mb-4 fs-1 text-center">CONTACTO</h2>
-
-            <form>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label fs-2">Nombre</label>
-                    <input type="text" class="form-control fs-4" id="nombre" placeholder="Franco López">
-                </div>
-
-                <div class="mb-3">
-                    <label for="celular" class="form-label fs-2">Celular</label>
-                    <input type="tel" class="form-control fs-4" id="celular" placeholder="3492 536998">
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label fs-2">Email</label>
-                    <input type="email" class="form-control fs-4" id="email" placeholder="nombre@ejemplo.com">
-                </div>
-
-                <div class="mb-3">
-                    <label for="asunto" class="form-label fs-2">Asunto</label>
-                    <input type="text" class="form-control fs-4" id="asunto" placeholder="Consulta sobre bienestar">
-                </div>
-
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label fs-2">Mensaje</label>
-                    <textarea class="form-control fs-4" id="mensaje" rows="4"
-                        placeholder="Escribí tu mensaje aquí..."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary fs-2">Enviar</button>
-            </form>
-        </section>
+        <div class="container">
+            <div class="form-container">
+                <h2 class="form-title">Contacto</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="tel" class="form-control" id="celular" placeholder="Ej: 3412345678" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="asunto" placeholder="Motivo del mensaje" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <!-- ubicación -->
         <section style="margin-bottom: 15rem;">

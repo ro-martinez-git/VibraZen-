@@ -1,7 +1,7 @@
 header {
     .banner-img-portada {
         background-image: url(../medios/mujer-camina.gif);
-        height: 67em;
+        height: 68rem;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -17,10 +17,14 @@ header {
 
             .text-banner-h1 {
                 font-size: 4rem;
+                color: chartreuse;
+                text-shadow: -4px 5px 4px rgba(0, 0, 0, 0.55);
             }
 
             .text-banner-p {
                 font-size: 3rem;
+                color: aliceblue;
+                text-shadow: -4px 5px 4px rgba(0, 0, 0, 0.55);
             }
         }
     }

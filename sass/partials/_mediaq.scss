@@ -31,7 +31,12 @@ header {
 
             .login-register {
                 margin-top: 1rem;
+
+                a {
+                    font-size: 1.3rem;
+                }
             }
+
         }
 
         .banner-img-portada {
@@ -49,6 +54,23 @@ header {
 
         }
 
+    }
+
+    @media (max-width: 1024px) {
+        .nav-container {
+            .login-register {
+                margin-top: 1rem;
+
+                a {
+                    font-size: 1.3rem;
+                    padding: 0.5rem;
+                }
+            }
+
+            a {
+                font-size: 1.3rem;
+            }
+        }
     }
 }
 
@@ -99,6 +121,14 @@ footer {
             gap: 1rem;
             padding: 1rem;
 
+            div p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    @media (max-width:1024px) {
+        .footer-container {
             div p {
                 font-size: 1.3rem;
             }
