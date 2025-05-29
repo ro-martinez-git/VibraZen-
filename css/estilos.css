@@ -27,7 +27,7 @@ header .nav-container {
 header .nav-container a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 header .nav-container ul {
   list-style: none;
@@ -73,30 +73,6 @@ footer .footer-container > div p {
   text-align: center;
 }
 
-/*
-  .login-register {
-            display: flex;
-            gap: 1rem;
-
-            a {
-                background: $white;
-                color: $naranja;
-                font-size: 2rem;
-                text-decoration: none;
-                padding: 0.5rem 1rem;
-                border: 1px solid $white;
-                border-radius: 10px;
-                transition: all 0.3s ease;
-
-                &:hover {
-                    background-color: darken($white, 10%);
-                    color: $white;
-                    background-color: $black;
-                    border-color: $naranja;
-                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-                }
-            }
-        }*/
 header .banner-img-portada {
   background-image: url(../medios/mujer-camina.gif);
   height: 67em;
@@ -442,11 +418,20 @@ main .grid-calendario .dia h4 {
   font-size: 2rem;
 }
 
+@media (max-width: 426px) {
+  header .nav-container .login-register a {
+    font-size: 1.7rem;
+    padding: 0.5rem 0.7rem;
+  }
+}
 @media (max-width: 991px) {
   header .nav-container {
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1rem;
+  }
+  header .nav-container a {
+    font-size: 1.5rem;
   }
   header .nav-container ul {
     flex-direction: column;
